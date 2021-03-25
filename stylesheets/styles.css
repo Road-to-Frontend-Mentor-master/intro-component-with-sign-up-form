@@ -145,6 +145,7 @@ a {
   border: 1px solid var(--grayish-blue);
   font-weight: 600;
   width: 100%;
+  color: var(--dark-blue);
 }
 
 input:focus {
