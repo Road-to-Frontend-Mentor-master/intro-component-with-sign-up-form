@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
@@ -18,12 +19,12 @@
   </header>
   <main class="main">
     <section class="section">
-      <header class="section-header">
-        <p class="paragraph">Try it free 7 days then $20/mo. thereafter</p>
+      <header class="section-header has-box-shadow">
+        <p class="paragraph"><strong class="strong">Try it free 7 days</strong> then $20/mo. thereafter</p>
       </header>
     </section>
-    <form action="#" class="form">
-      <div class="form-field">
+    <form action="#" class="form has-box-shadow">
+      <div data-error-message="First name cannot be empty" class="form-field">
         <input
           type="text"
           placeholder="First name"
@@ -32,7 +33,7 @@
           class="input"
         >
       </div>
-      <div class="form-field">
+      <div data-error-message class="form-field">
         <input
           type="text"
           placeholder="Last name"
@@ -41,7 +42,7 @@
           class="input"
         >
       </div>
-      <div class="form-field">
+      <div data-error-message class="form-field">
         <input
           type="email"
           placeholder="Email address"
@@ -50,7 +51,7 @@
           class="input"
         >
       </div>
-      <div class="form-field">
+      <div data-error-message class="form-field">
         <input
           type="password"
           placeholder="Password"
@@ -64,8 +65,8 @@
       </div>
       <div class="form-conditions">
         <p class="paragraph">
-          <small class="paragraph is-small">
-            By clicking the button, you are agreeing to our <a href="#" class="link">Terms and Services</a>
+          <small class="is-small">
+            By clicking the button, you are agreeing to our <a href="#" class="link" class="link">Terms and Services</a>
           </small>
         </p>
       </div>

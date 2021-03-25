@@ -1,0 +1,163 @@
+:root {
+  --body: hsl(0, 100%, 74%); 
+  --green: hsl(154, 59%, 51%); /* para claim your free trial */
+  --on-green: #ffffff;
+  --blue: hsl(248, 32%, 49%); /* para try it free 7 days */
+  --white-with-transparency: #ffffffdd;
+  --dark-green: #2fbb7e; /* box shadow button*/
+
+  /* textos y algunas lineas de cuadro*/
+  --dark-blue: hsl(249, 10%, 26%); 
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./../images/bg-intro-mobile.png);
+  background-color: var(--body);
+  margin: 0;
+  padding: 64px 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.has-box-shadow {
+  box-shadow: 0 7px #00000033;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.link {
+  color: var(--body);
+  font-weight: 700;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px var(--dark-green);
+}
+
+.button.is-primary {
+  background-color: var(--green);
+  color: var(--on-green);
+}
+
+.input {}
+
+.main-header {
+  color: var(--white-with-transparency);
+  margin-bottom: 64px;
+}
+
+.main-title {
+  margin-bottom: 24px;
+}
+
+.main {}
+
+.section-header {
+  background-color: var(--blue);
+  padding: 24px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.section-header .paragraph {
+  max-width: 200px;
+  margin: auto;
+}
+
+.form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-field.error {
+  text-align: right;
+  font-size: 12px;
+}
+
+.form-field.error::before {
+  content: url(./../images/icon-error.svg);
+  position: absolute;
+  right: 24px;
+  top: 14px;
+}
+
+.form-field.error::after {
+  content: attr(data-error-message);
+  display: block;
+  color: red;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.form-field.error input {
+  border-color: var(--body);
+  color: var(--body);
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form-actions {
+  margin-bottom: 16px;
+}
+
+.form-conditions {
+  color: var(--grayish-blue);
+}
+
+.input {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--grayish-blue);
+  font-weight: 600;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    text-align: center;
+  }
+  
+  .main-header {
+    text-align: center;
+  }
+}
