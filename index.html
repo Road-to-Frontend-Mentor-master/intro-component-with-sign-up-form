@@ -23,8 +23,12 @@
         <p class="paragraph"><strong class="strong">Try it free 7 days</strong> then $20/mo. thereafter</p>
       </header>
     </section>
-    <form action="#" class="form has-box-shadow">
-      <div data-error-message="First name cannot be empty" class="form-field">
+    <form id="signup-form" class="form has-box-shadow">
+      <div
+        id="first-name-field"
+        data-error-message="First name cannot be empty"
+        class="form-field"
+      >
         <input
           type="text"
           placeholder="First name"
@@ -33,7 +37,11 @@
           class="input"
         >
       </div>
-      <div data-error-message class="form-field">
+      <div
+        id="last-name-field"
+        data-error-message
+        class="form-field"
+      >
         <input
           type="text"
           placeholder="Last name"
@@ -42,7 +50,11 @@
           class="input"
         >
       </div>
-      <div data-error-message class="form-field">
+      <div
+        id="email-field"
+        data-error-message
+        class="form-field"
+      >
         <input
           type="email"
           placeholder="Email address"
@@ -51,7 +63,11 @@
           class="input"
         >
       </div>
-      <div data-error-message class="form-field">
+      <div
+        id='password-field'
+        data-error-message
+        class="form-field"
+      >
         <input
           type="password"
           placeholder="Password"
@@ -72,5 +88,7 @@
       </div>
     </form>
   </main>
+  
+  <script src="javascripts/app.js"></script>
 </body>
 </html>
