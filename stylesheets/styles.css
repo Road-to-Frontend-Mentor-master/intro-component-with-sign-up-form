@@ -23,6 +23,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -85,11 +89,6 @@ a {
   border-radius: 10px;
   color: white;
   margin-bottom: 24px;
-}
-
-.section-header .paragraph {
-  max-width: 200px;
-  margin: auto;
 }
 
 .form {
@@ -160,5 +159,47 @@ input:focus {
   
   .main-header {
     text-align: center;
+  }
+
+  .section-header .paragraph {
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1080px;
+    margin: auto;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .section-header {
+    padding: 16px;
+  }
+
+  .section-header .paragraph {
+    margin: initial;
+  }
+
+  .main-title {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .form-conditions {
+    text-align: center;
+  }
+
+  .is-small {
+    font-size: .7rem;
   }
 }
